@@ -19,6 +19,8 @@ class Order_info_handle(object):
         time.sleep(1)
         self.loger.info("输入的身份证号：" + idNumber)
         self.orderinfo_p.get_idNumber_element().send_keys(idNumber)
+        #self.orderinfo_p.get_xiansuolaiyuanlist_element().click()
+        #self.orderinfo_p.get_laiyuanqudao_element().click()
 
     #选择新车
     def search_xinche(self):

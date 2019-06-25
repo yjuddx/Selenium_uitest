@@ -9,6 +9,14 @@ class Order_info_page(object):
     def get_phoneNo_element(self):
         return self.fd.get_element("phoneNo")
 
+    #获取来源渠道列表
+    def get_xiansuolaiyuanlist_element(self):
+        return self.fd.get_element("xiansuolaiyuanlist")
+    
+    #获取来源渠道
+    def get_laiyuanqudao_element(self):
+        return self.fd.get_element("laiyuanqudao")
+
     #点击查询按钮
     def get_queryMobile_element(self):
         return self.fd.get_element("queryMobile")
