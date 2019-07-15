@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7ffe446-6897-4ba1-b654-1be235d9f4f2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/businees/order_info_business.py" beforeDir="false" afterPath="$PROJECT_DIR$/businees/order_info_business.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/businees/order_list_business.py" beforeDir="false" afterPath="$PROJECT_DIR$/businees/order_list_business.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/businees/receipt_business.py" beforeDir="false" afterPath="$PROJECT_DIR$/businees/receipt_business.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/test_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/test_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/conf.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/conf.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/order_info_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/handle/order_info_handle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/order_list_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/handle/order_list_handle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/order_Info_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/order_Info_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/order_list_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/order_list_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/read_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/read_excel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/xiansuo.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/xiansuo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logs/2019-07-15.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/logs/2019-07-15.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,9 +13,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/webui$test_case.coverage" NAME="test_case Coverage Results" MODIFIED="1563156097806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
+    <SUITE FILE_PATH="coverage/webui$test_case.coverage" NAME="test_case Coverage Results" MODIFIED="1563157438391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/hsuitest$user_log.coverage" NAME="user_log Coverage Results" MODIFIED="1558000892422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/log" />
-    <SUITE FILE_PATH="coverage/webui$xiansuo.coverage" NAME="xiansuo Coverage Results" MODIFIED="1562897634855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/webui$xiansuo.coverage" NAME="xiansuo Coverage Results" MODIFIED="1563157423040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -56,8 +46,8 @@
       <file leaf-file-name="order_info_business.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/businees/order_info_business.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="313" column="21" lean-forward="true" selection-start-line="313" selection-start-column="21" selection-end-line="313" selection-end-column="21" />
+            <state relative-caret-position="216">
+              <caret line="315" column="34" lean-forward="true" selection-start-line="315" selection-start-column="34" selection-end-line="315" selection-end-column="34" />
               <folding>
                 <element signature="e#14#68#0" expanded="true" />
               </folding>
@@ -77,10 +67,22 @@
       <file leaf-file-name="test_case.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/case/test_case.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-805">
-              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="253">
+              <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
               <folding>
                 <element signature="e#14#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xiansuo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/xiansuo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="118" column="33" lean-forward="true" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
+              <folding>
+                <element signature="e#13#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,11 +113,6 @@
       </file>
       <file leaf-file-name="test.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/report/test.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="login_page.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/login_page.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -158,10 +155,10 @@
         <option value="$PROJECT_DIR$/handle/order_list_handle.py" />
         <option value="$PROJECT_DIR$/config/conf.ini" />
         <option value="$PROJECT_DIR$/businees/receipt_business.py" />
-        <option value="$PROJECT_DIR$/case/test_case.py" />
         <option value="$PROJECT_DIR$/util/xiansuo.py" />
         <option value="$PROJECT_DIR$/util/read_excel.py" />
         <option value="$PROJECT_DIR$/businees/order_info_business.py" />
+        <option value="$PROJECT_DIR$/case/test_case.py" />
       </list>
     </option>
   </component>
@@ -174,7 +171,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -351,7 +348,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -359,9 +356,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.32791328" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.32791328" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26285347" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26285347" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -501,16 +498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/xiansuo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="e#13#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python3/Lib/site-packages/xlrd/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -632,10 +619,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/util/xiansuo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="118" column="33" lean-forward="true" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
+          <folding>
+            <element signature="e#13#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/businees/order_info_business.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="313" column="21" lean-forward="true" selection-start-line="313" selection-start-column="21" selection-end-line="313" selection-end-column="21" />
+        <state relative-caret-position="216">
+          <caret line="315" column="34" lean-forward="true" selection-start-line="315" selection-start-column="34" selection-end-line="315" selection-end-column="34" />
           <folding>
             <element signature="e#14#68#0" expanded="true" />
           </folding>
@@ -644,8 +641,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-805">
-          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="253">
+          <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
           <folding>
             <element signature="e#14#63#0" expanded="true" />
           </folding>

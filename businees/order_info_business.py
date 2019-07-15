@@ -312,8 +312,8 @@ class Order_info_business(object):
         self.orderinfo_h.xuanzewenjian()
         os.system(self.base_dir)
         time.sleep(1)
-        self.orderinfo_h.xuanzewenjian()
-        os.system(self.base_dir)
+        # self.orderinfo_h.xuanzewenjian()
+        # os.system(self.base_dir)
         self.orderinfo_h.querenguanbi()
 
     #订单新增暂存
