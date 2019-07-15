@@ -99,6 +99,11 @@ class Order_info_business(object):
         self.orderinfo_h.select_channelTypeCA()
         self.zifangType = 4
 
+    #选择奇瑞软银
+    def channelTypeQR(self):
+        self.orderinfo_h.select_channelTypeQR()
+        self.zifangType = 5
+
     #返回选择的资方
     def get_zifangType(self):
         zifangType = self.zifangType
@@ -110,7 +115,7 @@ class Order_info_business(object):
         return gh_rezult
 
     #选择是否实名制：是 是否店保：是 ---可填写垫付保费
-    #选择是否实名制：否 是否店保：否 ---不可填写垫付保费  计算保险差额时从保险系统获取
+    #选择是否实名制：否 是否店保：否 ---计算保险差额时从保险系统获取
     #一个否 一个是--- 可填写垫付保费
     def baoxian_YY(self):
         self.orderinfo_h.click_realNameSystemY()
@@ -301,6 +306,9 @@ class Order_info_business(object):
     #身份证上传截图
     def send_shenfenzheng(self):
         self.orderinfo_h.send_shenfenzheng()
+        self.orderinfo_h.xuanzewenjian()
+        os.system(self.base_dir)
+        time.sleep(1)
         self.orderinfo_h.xuanzewenjian()
         os.system(self.base_dir)
         time.sleep(1)

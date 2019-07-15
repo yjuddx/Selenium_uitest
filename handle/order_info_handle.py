@@ -17,10 +17,10 @@ class Order_info_handle(object):
         self.orderinfo_p.get_phoneNo_element().send_keys(phoneNo)
         self.orderinfo_p.get_queryMobile_element().click()
         time.sleep(1)
-        self.loger.info("输入的身份证号：" + idNumber)
-        self.orderinfo_p.get_idNumber_element().send_keys(idNumber)
-        #self.orderinfo_p.get_xiansuolaiyuanlist_element().click()
-        #self.orderinfo_p.get_laiyuanqudao_element().click()
+        # self.loger.info("输入的身份证号：" + idNumber)
+        # self.orderinfo_p.get_idNumber_element().send_keys(idNumber)
+        self.orderinfo_p.get_xiansuolaiyuanlist_element().click()
+        self.orderinfo_p.get_laiyuanqudao_element().click()
 
     #选择新车
     def search_xinche(self):
@@ -71,6 +71,7 @@ class Order_info_handle(object):
         self.orderinfo_p.get_bj_shi_element().click()
         self.orderinfo_p.get_preLicenseSotre_element().click()
         self.orderinfo_p.get_bj_mendian_element().click()
+        self.orderinfo_p.get_queryEmissionStandardName_element().click()
 
     #选择易鑫工行
     def select_channelTypeGH(self):
@@ -87,6 +88,10 @@ class Order_info_handle(object):
     #选择长安新生
     def select_channelTypeCA(self):
         self.orderinfo_p.get_channelTypeCA_element().click()
+
+    #选择奇瑞软银
+    def select_channelTypeQR(self):
+        self.orderinfo_p.get_channelTypeQR_element().click()
 
     #判断易鑫工行是否选中
     def channelTypeGH_is_selected(self):

@@ -8,37 +8,34 @@ class Xiansuo(object):
     def __init__(self):
         self.address='http://test.hsr.huashenghaoche.com'
         self.data = {
-            'loginId': 'ccadmin',
+            'loginId': 'zhaoyunhe1',
             'password': '123qwe'
         }
-        name_random = random.randint(10000,100000)
+        name_random = random.randint(10000, 100000)
         self.lead_name = '测试' + str(name_random)
-        phone_random = random.randint(10000000,99999999)
-        self.phone = '186' + str(phone_random)
+        phone_random = random.randint(10000000, 99999999)
+        self.phone = '120' + str(phone_random)
         #print(self.phone)
         self.Idcard = shenfenzheng.main()
         #print(self.Idcard)
-        self.create_xiansuo()
 
-
-
-    def create_xiansuo(self):
+    def login(self):
         #登录
         login_path = '/hshcmdm/toLogin'
         login_url = self.address + login_path
         res = requests.post(url=login_url, data=self.data)
         cookies = res.cookies['hshc_sid_test']
-        cookies = {'hshc_sid_test': cookies}
-        #print(cookies)
-        self.reszult = res.json()
-        #self.assertEqual(self.reszult['re'], '登录成功!')
+        self.cookies = {'hshc_sid_test': cookies}
 
+
+
+    def create_xiansuo(self):
         #提取门店code和门店名称
         self.leads_address = 'http://test-crm.huashenghaoche.com'
         toleads_path = '/hshccrm/newleads/toAddLeads'
         self.toleads_url = self.leads_address + toleads_path
         #print(self.toleads_url)
-        res = requests.get(self.toleads_url, cookies=cookies)
+        res = requests.get(self.toleads_url, cookies=self.cookies)
         html = res.text
         saleDepIdObj = re.search('<input type="hidden" name="saleDepId" value="(.*?)" />', html)
         if saleDepIdObj:
@@ -61,9 +58,9 @@ class Xiansuo(object):
                 "certificateNo": self.Idcard,
                 "residenceAddress": "",
                 "bindStatus": "",
-                "customerType": "",
-                "sex": "",
-                "certificateType": "",
+                "customerType": "customerTypeStatusList_001",
+                "sex": "1",
+                "certificateType": "customerCertificatesList_001",
                 "provinceId": "",
                 "cityId": "",
                 "districtId": "",
@@ -81,7 +78,7 @@ class Xiansuo(object):
                 "shopId": self.saleDepId,
                 "saleShop": self.saleDep,
                 "consultType": "msgMsgTypeList_001",
-                "businessLine": "",
+                "businessLine": "1",
                 "distributorCode": "",
                 "macketActivity": "",
                 "usedProvince": "",
@@ -118,7 +115,7 @@ class Xiansuo(object):
         add_lead_path = '/hshccrm/newleads/create/1/1'
         self.add_lead_url = self.leads_address + add_lead_path
         #print(self.add_lead_url)
-        res = requests.post(url=self.add_lead_url, json=json_data, cookies=cookies)
+        res = requests.post(url=self.add_lead_url, json=json_data, cookies=self.cookies)
         self.reszult = res.json()
         #print(self.reszult)
 #        self.assertEqual(self.reszult['re']['msg'], '可以新建')
@@ -132,6 +129,8 @@ class Xiansuo(object):
 
 if __name__ == '__main__':
     a = Xiansuo()
+    a.login()
+    a.create_xiansuo()
     e, b, c = a.get_xiansuo()
     print(e)
     print(b)

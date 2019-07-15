@@ -78,9 +78,38 @@ class Order_list():
     def get_guanbi_element(self):
         return self.fd.get_element("guanbi")
 
-    #提交按钮
+    #通用提交按钮
     def get_yxHsContractApply_element(self):
         return self.fd.get_element("yxHsContractApply")
+
+    #合同上传提交确定
+    def get_basicModalBtnNegative_element(self):
+        return self.fd.get_element("basicModalBtnNegative")
+
+    #审核合同
+    def get_btn_shenhehetong_element(self):
+        return self.fd.get_element("btn_shenhehetong")
+
+    #店保选择是
+    def get_shopInsuranceYNull_element(self):
+        return self.fd.get_element("shopInsuranceYNull")
+
+    #店保选择否
+    def get_shopInsuranceNNull_element(self):
+        return self.fd.get_element("shopInsuranceNNull")
+
+    #预订车辆
+    def get_btn_yudingcheliang_element(self):
+        return self.fd.get_element("btn_yudingcheliang")
+
+    #花生合同交强险
+    def get_forceAmountFlag_element(self):
+        return self.fd.get_element("forceAmountFlag")
+
+    #花生合同商业险
+    def get_businessAmountFlag_element(self):
+        return self.fd.get_element("businessAmountFlag")
+
 
 
 

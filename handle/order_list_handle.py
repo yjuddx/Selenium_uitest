@@ -4,6 +4,9 @@ import time
 from page.order_list_page import Order_list
 from os.path import abspath, dirname
 import os
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 
 class Order_list_handle(object):
     def __init__(self, driver):
@@ -81,6 +84,31 @@ class Order_list_handle(object):
     #提交按钮
     def button_yxHsContractApply(self):
         self.orderlist_p.get_yxHsContractApply_element().click()
+        time.sleep(1)
+        self.orderlist_p.get_basicModalBtnNegative_element().click()
+
+    #审核合同
+    def btn_shenhehetong(self):
+        self.orderlist_p.get_btn_shenhehetong_element().click()
+
+    #店保选择是提交
+    def shopInsuranceY(self):
+        #self.orderlist_p.get_shopInsuranceYNull_element().click()
+        self.orderlist_p.get_shopInsuranceNNull_element().click()
+        time.sleep(3)
+        #self.orderlist_p.get_forceAmountFlag_element().click()
+        #self.orderlist_p.get_businessAmountFlag_element().click()
+        self.orderlist_p.get_yxHsContractApply_element().click()
+        time.sleep(1)
+        self.orderlist_p.get_basicModalBtnNegative_element().click()
+
+    #点击预订车辆按钮
+    def click_btn_yudingcheliang(self):
+
+        self.orderlist_p.get_btn_yudingcheliang_element().click()
+
+
+
 
 
 

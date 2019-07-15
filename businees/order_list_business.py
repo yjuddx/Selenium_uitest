@@ -68,6 +68,20 @@ class Orderlist_business(object):
         time.sleep(1)
         self.orderlist_h.button_yxHsContractApply()
 
+    #审核合同
+    def to_shenhehetong(self,phoneNo):
+        self.search_order(phoneNo)
+        self.orderlist_h.btn_shenhehetong()
+        self.orderlist_h.shopInsuranceY()
+
+    #预订车辆
+    def to_yuding(self, phoneNo):
+        self.search_order(phoneNo)
+        self.orderlist_h.click_btn_yudingcheliang()
+        alert = self.driver.switch_to.alert
+        alert.accept()
+        # alert.dismiss()
+
 
 
 

@@ -1,5 +1,6 @@
 #coding=utf-8
 import xlrd
+from xlutils.copy import copy
 
 class ExcelUtil:
     def __init__(self,excel_path=None,index=None):

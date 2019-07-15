@@ -126,6 +126,10 @@ class Order_info_page(object):
     def get_bj_mendian_element(self):
         return self.fd.get_element("bj_mendian")
 
+    #排量
+    def get_queryEmissionStandardName_element(self):
+        return self.fd.get_element("queryEmissionStandardName")
+
     #获取易鑫工行
     def get_channelTypeGH_element(self):
         return self.fd.get_element("channelTypeGH")
@@ -141,6 +145,10 @@ class Order_info_page(object):
     #获取长安新生
     def get_channelTypeCA_element(self):
         return self.fd.get_element("channelTypeCA")
+
+    #奇瑞软银
+    def get_channelTypeQR_element(self):
+        return self.fd.get_element("channelTypeQR")
 
     #获取首年交强险
     def get_firstYearSali_element(self):
