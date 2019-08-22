@@ -8,7 +8,7 @@ class Xiansuo(object):
     def __init__(self):
         self.address='http://test.hsr.huashenghaoche.com'
         self.data = {
-            'loginId': 'zhaoyunhe1',
+            'loginId': 'ccadmin',
             'password': '123qwe'
         }
         name_random = random.randint(10000, 100000)
@@ -40,9 +40,11 @@ class Xiansuo(object):
         saleDepIdObj = re.search('<input type="hidden" name="saleDepId" value="(.*?)" />', html)
         if saleDepIdObj:
             self.saleDepId = saleDepIdObj.group(1)
+            #print(self.saleDepId)
         saleDepObj = re.search('<input type="hidden" name="saleDep" value="(.*?)" />', html)
         if saleDepObj:
             self.saleDep = saleDepObj.group(1)
+            #print(self.saleDep)
 
 
         #创建线索
@@ -115,8 +117,8 @@ class Xiansuo(object):
         add_lead_path = '/hshccrm/newleads/create/1/1'
         self.add_lead_url = self.leads_address + add_lead_path
         #print(self.add_lead_url)
-        res = requests.post(url=self.add_lead_url, json=json_data, cookies=self.cookies)
-        self.reszult = res.json()
+        res = requests.post(url=self.add_lead_url, json=json_data, cookies=self.cookies).json()
+        self.reszult = res
         #print(self.reszult)
 #        self.assertEqual(self.reszult['re']['msg'], '可以新建')
 

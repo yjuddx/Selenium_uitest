@@ -13,7 +13,6 @@ class Receipt_business(object):
         self.receipt_h.click_receiptByCode()
 
 
-
     #执行SQL变成已收首付已付定金
     def dow_payment(self, order_no):
         db = DB('cforder')

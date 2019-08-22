@@ -55,6 +55,10 @@ class Order_info_handle(object):
         self.orderinfo_p.get_colorlist_element().click()
         self.orderinfo_p.get_color_element().click()
 
+    #获取厂商
+    def send_factoryName(self):
+        self.orderinfo_p.get_factoryName_element().send_keys("东风日产")
+
     #输入指导价和售价
     def send_price(self, guidePrice, salePrice):
         self.orderinfo_p.get_guidePrice_element().clear()

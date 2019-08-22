@@ -90,6 +90,10 @@ class Order_info_page(object):
     def get_color_element(self):
         return self.fd.get_element("color")
 
+    #获取厂商
+    def get_factoryName_element(self):
+        return self.fd.get_element("factoryName")
+
     #获取指导价
     def get_guidePrice_element(self):
         return self.fd.get_element("guidePrice")

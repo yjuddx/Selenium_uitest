@@ -38,6 +38,7 @@ class Order_info_business(object):
 
     def car_info(self):
         self.orderinfo_h.select_car_info()
+        self.orderinfo_h.send_factoryName()
 
     def color_info(self):
         self.orderinfo_h.select_color_info()
